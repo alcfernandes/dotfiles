@@ -61,6 +61,7 @@ Plug 'tpope/vim-surround'
 Plug 'tomasr/molokai'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'morhetz/gruvbox'
+Plug 'altercation/vim-colors-solarized'
 
 " visual enhancements
 Plug 'vim-airline/vim-airline'
@@ -200,6 +201,12 @@ if !exists('g:not_finish_vimplug')
   " let g:gruvbox_contrast_dark = 'hard'
   " colorscheme gruvbox
 
+  " vim-colors-solarized
+  " set background=dark
+  " let g:solarized_termcolors=256
+  " colorscheme solarized
+
+
  endif
 
 " set font and color column
@@ -263,6 +270,7 @@ endif
 " ale
 let g:ale_emit_conflict_warnings = 0
 let g:ale_python_pylint_options = "-rcfile ~/.config/nvim/pylintrc"
+let g:ale_python_flake8_args="--ignore=E501"
 
 " vim-airline
 
